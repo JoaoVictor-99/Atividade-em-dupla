@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+  {% if erro %}
+    <p style="color: red;">{{ erro }}</p>
+  {% endif %}
+  <form method="post">
+    <p>Usuário: <input type="text" name="usuario"></p>
+    <p>Senha: <input type="password" name="senha"></p>
+    <p><button type="submit">Entrar</button></p>
+  </form>
+  <a href="/registro">Criar conta</a>
+</body>
+</html>
